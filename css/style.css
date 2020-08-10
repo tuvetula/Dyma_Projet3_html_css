@@ -247,6 +247,7 @@ nav {
 }
 .articles article p {
   margin: 0.3rem 0;
+  padding-right: 1rem;
 }
 .articles article img {
   grid-area: img;
@@ -273,18 +274,19 @@ nav {
 .popular ul li {
   display: grid;
   grid-template-columns: 50px auto;
-  place-items: center center;
   margin-bottom: 2rem;
 }
 .popular ul li:last-child {
   border-bottom: none;
 }
-.popular ul li > div {
+.popular ul li div:first-child {
+  align-self: center;
+  justify-self: center;
   font-size: 2.5rem;
   color: var(--gray-hint);
 }
 .popular ul li p {
-  margin: 0.3rem;
+  margin: 0.3rem 0;
 }
 .popular ul li h3 {
   margin-bottom: 0.3rem;
